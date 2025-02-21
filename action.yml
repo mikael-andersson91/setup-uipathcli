@@ -1,6 +1,6 @@
-name: The name of your action here
-description: Provide a description here
-author: Your name or organization here
+name: Setup uipathcli
+description: Installs the uipathcli tool on a github actions runner
+author: Mikael Andersson
 
 # Add your action's branding here. This will appear on the GitHub Marketplace.
 branding:
@@ -9,10 +9,26 @@ branding:
 
 # Define your inputs here.
 inputs:
-  milliseconds:
-    description: Your input description here
-    required: true
-    default: '1000'
+  uipath-uri:
+    description: 'The URL to your UiPath Orchestrator instance'
+    default: https://cloud.uipath.com
+    required: false
+  identity-url:
+    description: 'URL override for identity calls'
+    default: https://cloud.uipath.com/identity_
+    required: false
+  client-id:
+    description: 'The client id for the external application'
+    required: false
+  client-secret:
+    description: 'The client secret for the external application'
+    required: false
+  organization:
+    description: 'The organization unit to use'
+    required: false
+  tenant:
+    description: 'The tenant to use'
+    required: false
 
 # Define your outputs here.
 outputs:

@@ -59,6 +59,11 @@ jobs:
       - name: Test Local Action
         id: test-action
         uses: ./
+        with:
+          tenant: ${{ secrets.TENANT }}
+          organization: ${{ secrets.ORGANIZATION }}
+          client-id: ${{ secrets.CLIENT_ID }}
+          client-secret: ${{ secrets.CLIENT_SECRET }}
 
       - name: Run Sample Command
         id: run-command

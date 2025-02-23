@@ -56,7 +56,7 @@ jobs:
         id: checkout
         uses: actions/checkout@v4
 
-      - name: Test Local Action
+      - name: Test Setup uipathcli action
         id: test-action
         uses: ./
         with:

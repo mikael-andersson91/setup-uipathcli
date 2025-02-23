@@ -29853,14 +29853,6 @@ async function getDownloadUrl() {
  */
 async function run() {
   try {
-    const uipathUri = coreExports.getInput('uipath-uri');
-    const tenant = coreExports.getInput('tenant');
-    const clientId = coreExports.getInput('client-id');
-    const clientSecret = coreExports.getInput('client-secret');
-    const identityUrl = coreExports.getInput('identity-url');
-    const organization = coreExports.getInput('organization');
-
-    // Debug logs are only output if the `ACTIONS_STEP_DEBUG` secret is true
     const downloadUrl = await getDownloadUrl();
     coreExports.info(`Downloading uipathcli from ${downloadUrl}`);
 

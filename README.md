@@ -19,8 +19,8 @@ folders on the Orchestrator instance.
 
 In order to configure the **uipath** CLI to your Orchestrator instance, you must
 setup the environment variables similar to the example below. For the full list
-of environment variables used by the tool, see the
-[uipathcli README](https://github.com/UiPath/uipathcli?tab=readme-ov-file#global-arguments).
+of environment variables used by the tool, see the uipathcli
+[readme](https://github.com/UiPath/uipathcli#global-arguments).
 
 ```yaml
 uipathcli-sample-job:

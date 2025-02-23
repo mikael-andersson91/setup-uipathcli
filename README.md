@@ -6,31 +6,39 @@
 This action is intended to used in scenarios where you wish to install the
 [uipathcli](https://github.com/UiPath/uipathcli) (not to be confused with
 [UiPath CLI](https://docs.uipath.com/automation-ops/automation-cloud/latest/user-guide/about-uipath-cli),
-what's up with the naming of these tools here UiPath?), to streamline working
-with various UiPath APIs directly from the command line.
+which you can setup with
+[Mikael-RnD/setup-uipath](https://github.com/Mikael-RnD/setup-uipath)), what's
+up with the naming of these tools here UiPath?), to streamline working with
+various UiPath APIs directly from the command line.
 
 ## Usage
 
-After testing, you can create version tag(s) that developers can use to
-reference different stable versions of your action. For more information, see
-[Versioning](https://github.com/actions/toolkit/blob/main/docs/action-versioning.md)
-in the GitHub Actions toolkit.
+The below sample runs a job where the repository is checked out to the runner,
+the **setup-uipathcli** actions is used and the **uipath** cli is used to list
+folders on the Orchestrator instance.
 
-To include the action in a workflow in another repository, you can use the
-`uses` syntax with the `@` symbol to reference a specific branch, tag, or commit
-hash.
+In order to configure the **uipath** CLI to your Orchestrator instance, you must
+setup the environment variables similar to the example below. For the full list
+of environment variables used by the tool, see the
+[uipathcli README](https://github.com/UiPath/uipathcli?tab=readme-ov-file#global-arguments).
 
 ```yaml
-steps:
-  - name: Checkout
-    id: checkout
-    uses: actions/checkout@v4
+uipathcli-sample-job:
+  env:
+    UIPATH_CLIENT_ID: ${{ secrets.CLIENT_ID }}
+    UIPATH_CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
+    UIPATH_ORGANIZATION: ${{ secrets.ORGANIZATION }}
+    UIPATH_TENANT: ${{ secrets.TENANT }}
+  steps:
+    - name: Checkout
+      id: checkout
+      uses: actions/checkout@v4
 
-  - name: Setup uipath
-    id: setup-uipath
-    uses: mikael-andersson91/setup-uipathcli@v1
+    - name: Setup uipath
+      id: setup-uipath
+      uses: mikael-andersson91/setup-uipathcli@v1
 
-  - id: sample-uipath-command
-    run: |
-      uipath orchestrator folders get
+    - id: sample-uipath-command
+      run: |
+        uipath orchestrator folders get
 ```

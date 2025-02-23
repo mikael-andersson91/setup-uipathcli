@@ -1,0 +1,32 @@
+# This workflow will validate conventional commit compliance for both the commits and pull request
+# titles for any pull requests targeting the main branch
+name: Commitsar
+
+on:
+  pull_request:
+    branches:
+      - main
+
+permissions:
+  contents: read
+  pull-requests: read
+
+jobs:
+  commitsar:
+    name: Commitsar
+    runs-on: ubuntu-latest
+
+    steps:
+      - id: checkout
+        name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: ${{ github.event.pull_request.head.sha }}
+
+      - id: commitsar
+        name: Commitsar
+        uses: aevea/commitsar@v0.20.2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          COMMITSAR_CONFIG_PATH: ./

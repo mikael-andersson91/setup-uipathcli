@@ -1,17 +1,17 @@
 {
-  "name": "javascript-action",
+  "name": "setup-uipathcli",
   "description": "GitHub Actions JavaScript Template",
   "version": "0.0.0",
   "author": "",
   "type": "module",
   "private": true,
-  "homepage": "https://github.com/actions/javascript-action#readme",
+  "homepage": "https://github.com/mikael-andersson91/setup-uipathcli#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/actions/javascript-action.git"
+    "url": "git+https://github.com/mikael-andersson91/setup-uipathcli.git"
   },
   "bugs": {
-    "url": "https://github.com/actions/javascript-action/issues"
+    "url": "https://github.com/mikael-andersson91/setup-uipathcli/issues"
   },
   "keywords": [
     "actions"

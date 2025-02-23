@@ -50,6 +50,11 @@ jobs:
         os: [ubuntu-latest, windows-latest]
     name: GitHub Actions Test
     runs-on: ${{ matrix.os }}
+    env:
+      UIPATH_CLIENT_ID: ${{ secrets.CLIENT_ID }}
+      UIPATH_CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
+      UIPATH_ORGANIZATION: ${{ secrets.ORGANIZATION }}
+      UIPATH_TENANT: ${{ secrets.TENANT }}
 
     steps:
       - name: Checkout
@@ -63,4 +68,4 @@ jobs:
       - name: Run Sample Command
         id: run-command
         run: |
-          uipath
+          uipath orchestrator folders get

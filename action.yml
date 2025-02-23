@@ -7,34 +7,6 @@ branding:
   icon: heart
   color: red
 
-# Define your inputs here.
-inputs:
-  uipath-uri:
-    description: 'The URL to your UiPath Orchestrator instance'
-    default: https://cloud.uipath.com
-    required: false
-  identity-url:
-    description: 'URL override for identity calls'
-    default: https://cloud.uipath.com/identity_
-    required: false
-  client-id:
-    description: 'The client id for the external application'
-    required: false
-  client-secret:
-    description: 'The client secret for the external application'
-    required: false
-  organization:
-    description: 'The organization unit to use'
-    required: false
-  tenant:
-    description: 'The tenant to use'
-    required: false
-
-# Define your outputs here.
-outputs:
-  time:
-    description: Your output description here
-
 runs:
   using: node20
   main: dist/index.js

@@ -10,14 +10,6 @@ import os from 'os'
  */
 export async function run() {
   try {
-    const uipathUri = core.getInput('uipath-uri')
-    const tenant = core.getInput('tenant')
-    const clientId = core.getInput('client-id')
-    const clientSecret = core.getInput('client-secret')
-    const identityUrl = core.getInput('identity-url')
-    const organization = core.getInput('organization')
-
-    // Debug logs are only output if the `ACTIONS_STEP_DEBUG` secret is true
     const downloadUrl = await getDownloadUrl()
     core.info(`Downloading uipathcli from ${downloadUrl}`)
 

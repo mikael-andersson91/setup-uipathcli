@@ -47,9 +47,11 @@ jobs:
         id: release-notes
         run: |
           echo "## Release notes for created release" > "$GITHUB_STEP_SUMMARY"
-          echo "RELEASE_NOTES<<EOF" >> "$GITHUB_STEP_SUMMARY"
-          echo "${{ steps.semantic-release.outputs.new_release_notes }}" >> "$GITHUB_STEP_SUMMARY"
-          echo "EOF" >> "$GITHUB_STEP_SUMMARY"
+          {
+            echo "RELEASE_NOTES<<EOF"
+            echo "${{ steps.semantic-release.outputs.new_release_notes }}"
+            echo "EOF"
+          } >> "$GITHUB_STEP_SUMMARY"
 
       - name: No release created
         if:

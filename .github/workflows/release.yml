@@ -34,12 +34,31 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          semantic_version: 24.2.3
+          semantic_version: v24.2.1
           extra_plugins: |
             @semantic-release/git@10.0.1
             @semantic-release/changelog@6.0.3
             @semantic-release/exec@7.0.2
             conventional-changelog-conventionalcommits@8.0.0
+
+      - name: Release Created
+        if:
+          ${{ steps.semantic-release.outputs.new_release_published == 'true' }}
+        id: release-notes
+        run: |
+          echo "## Release notes for created release" > "$GITHUB_STEP_SUMMARY"
+          {
+            echo "RELEASE_NOTES<<EOF"
+            echo "${{ steps.semantic-release.outputs.new_release_notes }}"
+            echo "EOF"
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: No release created
+        if:
+          ${{ steps.semantic-release.outputs.new_release_published != 'true' }}
+        id: no-release
+        run: |
+          echo "No new release was created." >> "$GITHUB_STEP_SUMMARY"
 
   floating-tag:
     needs: release

@@ -41,6 +41,23 @@ jobs:
             @semantic-release/exec@7.0.2
             conventional-changelog-conventionalcommits@8.0.0
 
+      - name: Release Created
+        if:
+          ${{ steps.semantic-release.outputs.new_release_published == 'true' }}
+        id: release-notes
+        run: |
+          echo "## Release notes for created release" > $GITHUB_STEP_SUMMARY
+          echo "RELEASE_NOTES<<EOF" >> $GITHUB_SUMMARY
+          echo "${{ steps.semantic-release.outputs.new_release_notes }}" >> $GITHUB_SUMMARY
+          echo "EOF" >> $GITHUB_STEP_SUMMARY
+
+      - name: No release created
+        if:
+          ${{ steps.semantic-release.outputs.new_release_published != 'true' }}
+        id: no-release
+        run: |
+          echo "No new release was created." >> $GITHUB_STEP_SUMMARY
+
   floating-tag:
     needs: release
     if: ${{ needs.release.outputs.new_release_published == 'true' }}

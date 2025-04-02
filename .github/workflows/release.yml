@@ -34,7 +34,7 @@ jobs:
       - id: semantic-release
         uses: cycjimmy/semantic-release-action@v4
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.PAT }}
         with:
           semantic_version: v24.2.1
           extra_plugins: |
@@ -75,7 +75,7 @@ jobs:
       - name: Create floating tag
         uses: 'actions/github-script@v7'
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+          github-token: ${{ secrets.PAT }}
           script: |-
             const sha = "${{ needs.release.outputs.new_release_git_head }}";
             const major = `v${{ needs.release.outputs.new_release_major_version }}`;

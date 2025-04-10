@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/mikael-andersson91/setup-uipathcli/compare/v1.0.1...v1.0.2) (2025-04-10)
+
+### Maintenance
+
+* **deps-dev:** bump the npm-development group with 5 updates ([4fdcd64](https://github.com/mikael-andersson91/setup-uipathcli/commit/4fdcd6480b93f97e52158b224fea2a2921ddce2d))
+* **deps:** bump @rollup/rollup-linux-x64-gnu from 4.38.0 to 4.39.0 ([f0c0bbf](https://github.com/mikael-andersson91/setup-uipathcli/commit/f0c0bbfbd484b79fdea63774a23e41cd71077c02))
+
 ## [1.0.1](https://github.com/mikael-andersson91/setup-uipathcli/compare/v1.0.0...v1.0.1) (2025-04-02)
 
 ### Maintenance

@@ -1,3 +1,9 @@
+## [1.0.3](https://github.com/mikael-andersson91/setup-uipathcli/compare/v1.0.2...v1.0.3) (2025-04-15)
+
+### Maintenance
+
+* **deps:** bump @rollup/rollup-linux-x64-gnu from 4.39.0 to 4.40.0 ([822375e](https://github.com/mikael-andersson91/setup-uipathcli/commit/822375ee36e86e9deed07354c0e498ae738c0e27))
+
 ## [1.0.2](https://github.com/mikael-andersson91/setup-uipathcli/compare/v1.0.1...v1.0.2) (2025-04-10)
 
 ### Maintenance

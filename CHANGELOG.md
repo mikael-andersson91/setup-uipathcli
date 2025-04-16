@@ -1,3 +1,9 @@
+## [1.0.4](https://github.com/mikael-andersson91/setup-uipathcli/compare/v1.0.3...v1.0.4) (2025-04-16)
+
+### Maintenance
+
+* **deps-dev:** bump the npm-development group across 1 directory with 3 updates ([d6a73cf](https://github.com/mikael-andersson91/setup-uipathcli/commit/d6a73cf57e06b359af32fdb882e43b244eb168ef))
+
 ## [1.0.3](https://github.com/mikael-andersson91/setup-uipathcli/compare/v1.0.2...v1.0.3) (2025-04-15)
 
 ### Maintenance

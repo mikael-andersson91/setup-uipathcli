@@ -1,3 +1,11 @@
+## [1.0.9](https://github.com/mikael-andersson91/setup-uipathcli/compare/v1.0.8...v1.0.9) (2025-07-01)
+
+### Maintenance
+
+* **deps-dev:** bump @jest/globals from 29.7.0 to 30.0.3 ([5723cf3](https://github.com/mikael-andersson91/setup-uipathcli/commit/5723cf3d7bef9725b6f212306f24b18c3324b59a))
+* **deps-dev:** bump eslint-plugin-jest from 28.12.0 to 29.0.1 ([a257849](https://github.com/mikael-andersson91/setup-uipathcli/commit/a2578496bd4cd1feb3ee58e43e4a1b0cd2282319))
+* **deps:** bump @rollup/rollup-linux-x64-gnu ([f1c73e1](https://github.com/mikael-andersson91/setup-uipathcli/commit/f1c73e1ae9edbadd702e21264d8516e0a12d31bc))
+
 ## [1.0.8](https://github.com/mikael-andersson91/setup-uipathcli/compare/v1.0.7...v1.0.8) (2025-06-24)
 
 ### Maintenance

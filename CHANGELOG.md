@@ -1,3 +1,9 @@
+## [1.0.10](https://github.com/mikael-andersson91/setup-uipathcli/compare/v1.0.9...v1.0.10) (2025-07-12)
+
+### Maintenance
+
+* **deps-dev:** bump jest from 29.7.0 to 30.0.4 ([6635208](https://github.com/mikael-andersson91/setup-uipathcli/commit/6635208952bb22fa4cc9eeb46bac04783ddb868b))
+
 ## [1.0.9](https://github.com/mikael-andersson91/setup-uipathcli/compare/v1.0.8...v1.0.9) (2025-07-01)
 
 ### Maintenance

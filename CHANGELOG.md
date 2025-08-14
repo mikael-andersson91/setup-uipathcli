@@ -1,3 +1,9 @@
+## [1.0.13](https://github.com/mikael-andersson91/setup-uipathcli/compare/v1.0.12...v1.0.13) (2025-08-14)
+
+### Maintenance
+
+* **deps:** bump actions/checkout from 4 to 5 ([a3ccad3](https://github.com/mikael-andersson91/setup-uipathcli/commit/a3ccad3cfea8f06a3dcf80281c5b33dc7ed14e66))
+
 ## [1.0.12](https://github.com/mikael-andersson91/setup-uipathcli/compare/v1.0.11...v1.0.12) (2025-08-06)
 
 ### Maintenance

@@ -26,7 +26,7 @@ jobs:
 
       - id: commitsar
         name: Commitsar
-        uses: aevea/commitsar@v0.20.2
+        uses: aevea/commitsar@v1.0.1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           COMMITSAR_CONFIG_PATH: ./

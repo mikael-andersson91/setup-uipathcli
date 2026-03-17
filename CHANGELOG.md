@@ -1,3 +1,29 @@
+## [1.0.15](https://github.com/mikael-andersson91/setup-uipathcli/compare/v1.0.14...v1.0.15) (2026-03-17)
+
+### ⚠ BREAKING CHANGES
+
+* action now requires Node 24 on runners
+
+### Maintenance
+
+* **deps-dev:** bump @github/local-action from 3.2.1 to 5.2.0 ([c129412](https://github.com/mikael-andersson91/setup-uipathcli/commit/c12941214dd75de07209e92815d6e1ec786073ed))
+* **deps:** bump @rollup/rollup-linux-x64-gnu from 4.48.1 to 4.52.5 ([42f25c5](https://github.com/mikael-andersson91/setup-uipathcli/commit/42f25c564439a26b1ab96da2dcce10527e98a45a))
+* **deps:** bump @rollup/rollup-linux-x64-gnu from 4.53.3 to 4.55.2 ([2989b93](https://github.com/mikael-andersson91/setup-uipathcli/commit/2989b93b859526a2b2780c9010547ff6464e4fb0))
+* **deps:** bump @rollup/rollup-linux-x64-gnu from 4.55.2 to 4.57.1 ([5dcf193](https://github.com/mikael-andersson91/setup-uipathcli/commit/5dcf193c967f381abd55c9fac3e14982bedfcdcc))
+* **deps:** bump @rollup/rollup-linux-x64-gnu from 4.57.1 to 4.59.0 ([13c609d](https://github.com/mikael-andersson91/setup-uipathcli/commit/13c609d456e7e92e5e9a4f9a2be6442970c630fc))
+* **deps:** bump actions/checkout from 5 to 6 ([49a9766](https://github.com/mikael-andersson91/setup-uipathcli/commit/49a97665caf6c8f4f8ddde4a70ecb524959170f7))
+* **deps:** bump actions/github-script from 7 to 8 ([691628e](https://github.com/mikael-andersson91/setup-uipathcli/commit/691628e24b78aa3c0f405099d596df4dc65b8880))
+* **deps:** bump actions/setup-node from 4 to 6 ([2671fd0](https://github.com/mikael-andersson91/setup-uipathcli/commit/2671fd02e414a5f0a6c2a3f3fe3659c9bcee1cf3))
+* **deps:** bump actions/upload-artifact from 4 to 5 ([50b4370](https://github.com/mikael-andersson91/setup-uipathcli/commit/50b43705dc9fc48ed158ed44ea8331e8b6feb104))
+* **deps:** bump actions/upload-artifact from 5 to 6 ([f95ef19](https://github.com/mikael-andersson91/setup-uipathcli/commit/f95ef19e2103931ee9af25deb721394e8ff68024))
+* **deps:** bump actions/upload-artifact from 6 to 7 ([69b243e](https://github.com/mikael-andersson91/setup-uipathcli/commit/69b243efdcff9c12e08d2661ac2098ddb73058b5))
+* **deps:** bump aevea/commitsar from 0.20.2 to 1.0.2 ([470bbcd](https://github.com/mikael-andersson91/setup-uipathcli/commit/470bbcd29491f01e7343701cbde6baf4dd27912e))
+* **deps:** bump aevea/commitsar in the actions-minor group ([e8a53e0](https://github.com/mikael-andersson91/setup-uipathcli/commit/e8a53e03df860a5c02f5618fbbbc4a7f83d01b25))
+* **deps:** bump cycjimmy/semantic-release-action from 4 to 5 ([5fc307f](https://github.com/mikael-andersson91/setup-uipathcli/commit/5fc307fda4419253c28298b928d2101d9ba0c113))
+* **deps:** bump cycjimmy/semantic-release-action from 5 to 6 ([9eb0529](https://github.com/mikael-andersson91/setup-uipathcli/commit/9eb05293bbe8b68ea9bc8db17a27545076a4d8ea))
+* **deps:** bump github/codeql-action from 3 to 4 ([1cf593e](https://github.com/mikael-andersson91/setup-uipathcli/commit/1cf593eb6c28f2aff49b9a4475c5315a657d8133))
+* upgrade to use node 24 ([0c68fce](https://github.com/mikael-andersson91/setup-uipathcli/commit/0c68fce637ff1dc39a82827bc441b56aef103639))
+
 ## [1.0.14](https://github.com/mikael-andersson91/setup-uipathcli/compare/v1.0.13...v1.0.14) (2025-09-04)
 
 ### Maintenance

@@ -8,5 +8,5 @@ branding:
   color: red
 
 runs:
-  using: node24  # actionlint: ignore
+  using: node24 # actionlint: ignore
   main: dist/index.js

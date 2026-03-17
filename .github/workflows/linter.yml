@@ -58,3 +58,4 @@ jobs:
           VALIDATE_JAVASCRIPT_STANDARD: false
           VALIDATE_JSCPD: false
           VALIDATE_JSON: false
+          GITHUB_ACTIONS: false

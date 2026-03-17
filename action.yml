@@ -8,5 +8,5 @@ branding:
   color: red
 
 runs:
-  using: node24
+  using: node24  # yamllint disable-line
   main: dist/index.js

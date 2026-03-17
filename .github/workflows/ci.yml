@@ -63,6 +63,7 @@ jobs:
 
       - name: Test Setup uipathcli action
         id: test-action
+        # actionlint: ignore [action] - node24 runner not yet recognized
         uses: ./
 
       - name: Run Sample Command

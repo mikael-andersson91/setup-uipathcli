@@ -63,7 +63,7 @@ jobs:
 
       - name: Test Setup uipathcli action
         id: test-action
-        uses: ./ # actionlint: ignore
+        uses: ./
 
       - name: Run Sample Command
         id: run-command

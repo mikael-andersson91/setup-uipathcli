@@ -1,3 +1,9 @@
+## [1.0.16](https://github.com/mikael-andersson91/setup-uipathcli/compare/v1.0.15...v1.0.16) (2026-03-18)
+
+### Maintenance
+
+* **deps-dev:** bump fast-xml-parser from 5.2.1 to 5.5.6 ([361b400](https://github.com/mikael-andersson91/setup-uipathcli/commit/361b4006214918d5f4cfad913405a0692d1fa635))
+
 ## [1.0.15](https://github.com/mikael-andersson91/setup-uipathcli/compare/v1.0.14...v1.0.15) (2026-03-17)
 
 ### ⚠ BREAKING CHANGES

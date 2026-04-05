@@ -18,9 +18,13 @@ the **setup-uipathcli** actions is used and the **uipath** cli is used to list
 folders on the Orchestrator instance.
 
 The action accepts inputs to configure the **uipath** CLI for your Orchestrator
-instance. The action will set the appropriate environment variables automatically.
-For the full list of environment variables used by the **uipath**, see the uipathcli
+instance. The action will set the appropriate environment variables
+automatically. For the full list of environment variables used by the
+**uipath**, see the uipathcli
 [readme](https://github.com/UiPath/uipathcli#global-arguments).
+
+For up-to-date list of inputs available for this action, please refer to the
+actions [action.yml file](/action.yml).
 
 ```yaml
 uipathcli-sample-job:

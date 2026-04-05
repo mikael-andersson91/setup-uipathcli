@@ -1,5 +1,7 @@
 name: Setup uipathcli
-description: Installs the uipathcli tool and sets up environment variables on a github actions runner
+description:
+  Installs the uipathcli tool and sets up environment variables on a github
+  actions runner
 author: Mikael Andersson
 
 # Add your action's branding here. This will appear on the GitHub Marketplace.

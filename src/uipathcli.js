@@ -30,3 +30,36 @@ export async function getDownloadUrl() {
 
   throw new Error(`Unsupported platform/architecture: ${platform}/${arch}`)
 }
+
+/**
+ * Sets up environment variables for the uipathcli tool based on action inputs
+ */
+export async function setupUiPathEnvironmentVariables() {
+  const uipathUrl = core.getInput("uipath-url").replace(/\/+$/, '');
+  const clientId = core.getInput("client-id");
+  const clientSecret = core.getInput("client-secret");
+  const pat = core.getInput("pat");
+  const tenant = core.getInput("tenant");
+  const organization = core.getInput("organization");
+
+  if (uipathUrl) {
+    const identityUrl = `${uipathUrl}/identity_`;
+    core.exportVariable("UIPATH_URI", uipathUrl);
+    core.exportVariable("UIPATH_IDENTITY_URI", identityUrl);
+  }
+  if (clientId) {
+    core.exportVariable("UIPATH_CLIENT_ID", clientId);
+  }
+  if (clientSecret) {
+    core.exportVariable("UIPATH_CLIENT_SECRET", clientSecret);
+  }
+  if (pat) {
+    core.exportVariable("UIPATH_PAT", pat);
+  }
+  if (tenant) {
+    core.exportVariable("UIPATH_TENANT", tenant);
+  }
+  if (organization) {
+    core.exportVariable("UIPATH_ORGANIZATION", organization);
+  }
+}

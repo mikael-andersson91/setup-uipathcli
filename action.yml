@@ -7,6 +7,27 @@ branding:
   icon: heart
   color: red
 
+inputs:
+  uipath-url:
+    description: 'UiPath instance URL (e.g., https://cloud.uipath.com)'
+    required: false
+    default: 'https://cloud.uipath.com'
+  client-id:
+    description: 'UiPath External Application Client ID for authentication'
+    required: false
+  client-secret:
+    description: 'UiPath External Application Client Secret for authentication'
+    required: false
+  pat:
+    description: 'UiPath Personal Access Token for authentication'
+    required: false
+  tenant:
+    description: 'UiPath tenant name'
+    required: false
+  organization:
+    description: 'UiPath organization name'
+    required: false
+
 runs:
   using: node24 # actionlint: ignore
   main: dist/index.js

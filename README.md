@@ -32,11 +32,11 @@ uipathcli-sample-job:
   steps:
     - name: Checkout
       id: checkout
-      uses: actions/checkout@v4
+      uses: actions/checkout@v6
 
     - name: Setup uipath
       id: setup-uipath
-      uses: mikael-andersson91/setup-uipathcli@v1
+      uses: mikael-andersson91/setup-uipathcli@v2
 
     - id: sample-uipath-command
       run: |

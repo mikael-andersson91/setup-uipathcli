@@ -1,6 +1,6 @@
 import * as core from '@actions/core'
 import * as tc from '@actions/tool-cache'
-import { getDownloadUrl } from './uipathcli'
+import { getDownloadUrl, setupUiPathEnvironmentVariables } from './uipathcli'
 import os from 'os'
 
 /**
@@ -26,6 +26,9 @@ export async function run() {
       core.addPath(downloadPath)
     }
     core.info(`uipathcli extracted to ${downloadPath} and added to PATH`)
+    core.info('Setting up environment variables for uipathcli')
+    await setupUiPathEnvironmentVariables()
+    core.info('Environment variables set up successfully')
   } catch (error) {
     // Fail the workflow run if an error occurs
     if (error instanceof Error) core.setFailed(error.message)

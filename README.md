@@ -17,26 +17,27 @@ The below sample runs a job where the repository is checked out to the runner,
 the **setup-uipathcli** actions is used and the **uipath** cli is used to list
 folders on the Orchestrator instance.
 
-In order to configure the **uipath** CLI to your Orchestrator instance, you must
-setup the environment variables similar to the example below. For the full list
-of environment variables used by the tool, see the uipathcli
+The action accepts inputs to configure the **uipath** CLI for your Orchestrator
+instance. The action will set the appropriate environment variables automatically.
+For the full list of environment variables used by the **uipath**, see the uipathcli
 [readme](https://github.com/UiPath/uipathcli#global-arguments).
 
 ```yaml
 uipathcli-sample-job:
-  env:
-    UIPATH_CLIENT_ID: ${{ secrets.CLIENT_ID }}
-    UIPATH_CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
-    UIPATH_ORGANIZATION: ${{ secrets.ORGANIZATION }}
-    UIPATH_TENANT: ${{ secrets.TENANT }}
   steps:
     - name: Checkout
       id: checkout
       uses: actions/checkout@v6
 
-    - name: Setup uipath
-      id: setup-uipath
+    - name: Setup uipathcli
+      id: setup-uipathcli
       uses: mikael-andersson91/setup-uipathcli@v2
+      with:
+        uipath-url: ${{ secrets.UIPATH_URL }}
+        client-id: ${{ secrets.CLIENT_ID }}
+        client-secret: ${{ secrets.CLIENT_SECRET }}
+        tenant: ${{ secrets.TENANT }}
+        organization: ${{ secrets.ORGANIZATION }}
 
     - id: sample-uipath-command
       run: |

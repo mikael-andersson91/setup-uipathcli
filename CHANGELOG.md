@@ -1,3 +1,14 @@
+## [2.0.0](https://github.com/mikael-andersson91/setup-uipathcli/compare/v1.0.16...v2.0.0) (2026-04-05)
+
+### ⚠ BREAKING CHANGES
+
+* environment variables exported through the action may
+now overwrite previous environment setup
+
+### Features
+
+* export environment variables for setup ([#108](https://github.com/mikael-andersson91/setup-uipathcli/issues/108)) ([9c13693](https://github.com/mikael-andersson91/setup-uipathcli/commit/9c13693de40516d63592d5757a65188f9bcf2952))
+
 ## [1.0.16](https://github.com/mikael-andersson91/setup-uipathcli/compare/v1.0.15...v1.0.16) (2026-03-18)
 
 ### Maintenance

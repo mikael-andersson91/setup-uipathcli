@@ -70,6 +70,7 @@ jobs:
         run: |
           echo "Testing uipathcli installation and configuration"
           echo "UIPATH_URI: $UIPATH_URI"
+          echo "UIPATH_IDENTITY_URI: $UIPATH_IDENTITY_URI"
           echo "UIPATH_TENANT: $UIPATH_TENANT"
           echo "UIPATH_ORGANIZATION: $UIPATH_ORGANIZATION"
           uipath orchestrator --help
